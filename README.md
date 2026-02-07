@@ -26,7 +26,7 @@ This project blends **data engineering** and **backend API development** into a 
 
 ## 🏗️ Architecture
 
-![Architecture](assets/fin-orchestrator-apis arch.jpg)
+![Architecture](/assets/fin-orchestrator-apis-arch.jpg)
 
 **Pipeline and API Flow:**
 
