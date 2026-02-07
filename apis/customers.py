@@ -8,6 +8,15 @@ router = APIRouter()
 
 
 class Customer(BaseModel):
+    customer_id: str
+    first_name: str
+    last_name: str
+    email: str
+    created_at: Optional[str] = None
+    effective_from: Optional[str] = None
+    effective_to: Optional[str] = None
+    is_current: Optional[bool] = None
+
     """
     Pydantic model representing a Customer entity.
 
