@@ -8,6 +8,16 @@ router = APIRouter()
 
 
 class Account(BaseModel):
+    account_id: str
+    customer_id: str
+    account_type: str
+    balance: float
+    currency: str
+
+    created_at: Optional[str] = None
+    effective_from: Optional[str] = None
+    effective_to: Optional[str] = None
+    is_current: Optional[bool] = None
     """
     Pydantic model representing an Account entity.
 

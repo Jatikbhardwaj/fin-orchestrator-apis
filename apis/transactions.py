@@ -8,6 +8,17 @@ router = APIRouter()
 
 
 class Transaction(BaseModel):
+    transaction_id: str
+    account_id: str
+    customer_id: str
+    amount: float
+
+    related_account_id: Optional[str] = None
+    status: Optional[str] = None
+    transaction_type: Optional[str] = None
+    transaction_time: Optional[str] = None
+    load_timestamp: Optional[str] = None
+
     """
     Pydantic model representing a Transaction entity.
 
